@@ -185,6 +185,7 @@
   padding: 15px;
   
 }
+
 .pro-1{
   display: flex;
   align-items: center;
@@ -259,6 +260,10 @@
   gap: 10px;
   overflow: auto;
   position: relative;
+  padding: 10px;
+}
+.exp-2::-webkit-scrollbar {
+    display: none;
 }
 .exp-21 p,.exp-22 p,.exp-23 p,.exp-24 p{
   position: absolute;
@@ -268,6 +273,39 @@
   font-weight: bolder;
   margin-left: 10px;
 }
+
+/*place and buget*/
+.place{
+  margin-left:40px;
+  margin-right: 40px;
+}
+.pl-c{
+  padding: 10px;
+  display: flex;
+  gap: 15px;
+  overflow: scroll;
+
+}
+.pl-c::-webkit-scrollbar {
+    display: none;
+}
+.pl-c img{
+  width: 249px;
+  height: 249px;
+  border-radius: 10px;
+}
+.c1{
+  position: relative;
+}
+.like {
+  position: absolute;
+  top: 10px;
+  left: 200px;
+  background-color: white;
+  border-radius: 100px;
+  padding: 8px;
+}
+
 
 @media screen and (min-width:700px) {
   .nav3{

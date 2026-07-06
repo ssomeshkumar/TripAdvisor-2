@@ -305,6 +305,74 @@
   border-radius: 100px;
   padding: 8px;
 }
+.p2-1{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  display: none;
+}
+.p2-2{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin:10px;
+}
+
+/*inspiration*/
+.main-in{
+  background-color: #F7F7F7;
+  margin-top: 30px;
+  padding: 0px;
+  
+}
+.in-box{
+  margin-left: 35px;
+  margin-right: 39px;
+}
+.in-box h3{
+  font-weight: 500;
+  padding: 5px;
+}
+.in-c{
+  display: flex;
+  gap: 5px;
+  padding: 5px;
+  overflow: scroll;
+}
+.in-c1{
+  position: relative;
+  
+}
+.in-c1 img{
+  width: 310px;
+  height: 190px;
+  border-radius: 10px;
+}
+.in-c1 i{
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  right: 20px;
+  background-color: white;
+  border-radius: 25px;
+  padding: 5px;
+}
+.in-p{
+  margin: 10px;
+  display: flex;
+}
+
+/*water promotion&*/
+.name{
+  display: inline-block;
+  font-size: smaller;
+  background-color:#f5f5f5 ;
+  padding: 4px;
+  border-radius: 10px;
+}
+
+
+
 
 
 @media screen and (min-width:700px) {
@@ -405,6 +473,16 @@
   align-items:center ;
   justify-content: center;
  }
+ .p-1{
+    border: none;
+  }
+  .p2-2{
+    display: none;
+  }
+  .p2-1{
+    display: block;
+    display: flex;
+  }
   
 }
 
@@ -491,6 +569,16 @@
  width: 229px;
  height: 240px;
  }
+ .p-1{
+    border: none;
+  }
+  .p2-2{
+    display: none;
+  }
+  .p2-1{
+    display: block;
+    display: flex;
+  }
 
   
 }
@@ -545,5 +633,27 @@
     width: 275px;
     height: 270px;
   }
+  .place{
+    margin-left: 185px;
+    margin-right: 170px;
+    padding: 10px;
+  }
+  .pl-c1 img{
+    width: 269px;
+  }
+  .p-1{
+    border: none;
+  }
+  .p2-2{
+    display: none;
+  }
+  .p2-1{
+    display: block;
+    display: flex;
+  }
+  .exp-2 img{
+ width: 270px;
+ height: 250px;
+ }
 }
 

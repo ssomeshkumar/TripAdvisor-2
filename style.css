@@ -339,6 +339,9 @@
   padding: 5px;
   overflow: scroll;
 }
+.in-c::-webkit-scrollbar {
+    display: none;
+}
 .in-c1{
   position: relative;
   
@@ -371,7 +374,64 @@
   border-radius: 10px;
 }
 
+/*footer*/
+.m-f{
+  background-color: #F7F7F7;
+  padding: 30px;
+  margin-top: 30px;
+}
+.main-foot{
+    width:100%;
+    background:F7F7F7;
+}
 
+.accordion{
+    width:90%;
+    margin:auto;
+}
+
+.accordion-item{
+    border-bottom:1px solid #ddd;
+}
+
+.accordion-btn{
+    width:100%;
+    background:none;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+    
+}
+
+.accordion-btn span{
+    
+    transition:.3s;
+}
+
+.accordion-content{
+    max-height:0;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    transition:max-height .4s ease;
+}
+
+.accordion-content a{
+  font-size: smaller;
+  font-weight: 300;
+    text-decoration:none;
+    color:#000;
+    padding:10px 0;
+    
+}
+
+.accordion-content a:hover{
+    color:#00855A;
+}
 
 
 
@@ -580,6 +640,77 @@
     display: flex;
   }
 
+
+  /*footor*/
+.m-f{
+  background-color: #F7F7F7;
+  height: 500px;
+  width: 95%;
+  font-size: smaller;
+ 
+ }
+.main-foot{
+ padding:5px;
+ width: 90%;
+}
+ 
+ .accordion{
+  display: flex;
+  gap: 20px;
+ }
+
+ .accordion{
+    width:100%;
+    margin:auto;
+}
+
+.accordion-item{
+    border-bottom:none;
+}
+
+.accordion-btn{
+    width:100%;
+    background:none;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+    
+}
+
+.accordion-btn span{
+    
+    transition:.3s;
+}
+
+.accordion-content{
+    max-height:0;
+    overflow: visible;
+    display:flex;
+    flex-direction:column;
+    transition:max-height .4s ease;;
+}
+
+.accordion-content a{
+  font-size: smaller;
+  font-weight: 300;
+    text-decoration:none;
+    color:#000;
+    padding:10px 0;
+    
+}
+
+.accordion-content a:hover{
+    color:#00855A;
+}
+.down{
+  display: none;
+}
+
+
   
 }
 @media screen and (min-width:1400px){
@@ -655,5 +786,77 @@
  width: 270px;
  height: 250px;
  }
+ .in-box{
+  margin-left: 200px;
+  margin-right: 190px;
+ }
+
+/*footor*/
+
+.main-foot{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+ .m-f{
+  background-color: #F7F7F7;
+  height: 500px;
+ }
+ .accordion{
+  display: flex;
+  gap: 60px;
+ }
+
+ .accordion{
+    width:90%;
+    margin:auto;
 }
 
+.accordion-item{
+    border-bottom:none;
+}
+
+.accordion-btn{
+    width:100%;
+    background:none;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+    
+}
+
+.accordion-btn span{
+    
+    transition:.3s;
+}
+
+.accordion-content{
+    max-height:0;
+    overflow: visible;
+    display:flex;
+    flex-direction:column;
+    transition:max-height .4s ease;;
+}
+
+.accordion-content a{
+  font-size: smaller;
+  font-weight: 300;
+    text-decoration:none;
+    color:#000;
+    padding:10px 0;
+    
+}
+
+.accordion-content a:hover{
+    color:#00855A;
+}
+.down{
+  display: none;
+}
+
+
+
+}

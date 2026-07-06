@@ -328,39 +328,36 @@
         <div class="in-c">
 
           <div class="in-c1">
-              <img src="./promotion.jpg" alt="">
-              <i class="fa-regular fa-heart"></i>
-              <div class="in-p">
-                <p>The world’s most unique hotels, revealed</p>
-              </div>
+            <img src="./promotion.jpg" alt="">
+            <i class="fa-regular fa-heart"></i>
+            <div class="in-p">
+              <p>The world’s most unique hotels, revealed</p>
+            </div>
           </div>
 
           <div class="in-c1">
-              <img src="./promotion.jpg" alt="">
-              <i class="fa-regular fa-heart"></i>
-              <div class="in-p">
-                <p>The world’s most unique hotels, revealed</p>
-              </div>
+            <img src="./promotion.jpg" alt="">
+            <i class="fa-regular fa-heart"></i>
+            <div class="in-p">
+              <p>The world’s most unique hotels, revealed</p>
+            </div>
           </div>
 
           <div class="in-c1">
-              <img src="./promotion.jpg" alt="">
-              <i class="fa-regular fa-heart"></i>
-              <div class="in-p">
-                <p>The world’s most unique hotels, revealed</p>
-              </div>
+            <img src="./promotion.jpg" alt="">
+            <i class="fa-regular fa-heart"></i>
+            <div class="in-p">
+              <p>The world’s most unique hotels, revealed</p>
+            </div>
           </div>
 
-
-
-          
         </div>
       </div>
     </div>
 
     <!--water function-->
 
-     <div class="main-place">
+    <div class="main-place">
 
       <div class="place">
         <h2 style="font-weight: 500;">Just add water</h2>
@@ -438,7 +435,7 @@
 
     </div>
 
-     <!--next trip -->
+    <!--next trip -->
 
     <div class="exp">
       <div class="exp-1">
@@ -465,7 +462,7 @@
       </div>
     </div>
 
-  <!--iconic place -->
+    <!--iconic place -->
 
     <div class="exp">
       <div class="exp-1">
@@ -491,7 +488,7 @@
       </div>
     </div>
 
-     <!--promotion box 3-->
+    <!--promotion box 3-->
     <div class="main-promo">
 
       <div class="promo-box" style="background-color:#F7F7F7;">
@@ -544,8 +541,89 @@
 
     </div>
 
+    <!--footer box-->
+    <div class="foot-box">
+      <!--foot1-->
+      <div class="m-f">
+        <footer class="main-foot">
+          <div class="accordion">
 
+            <div class="accordion-item">
+              <button class="accordion-btn">
+                About Tripadvisor
+                <span class="down">⌄</span>
+              </button>
 
+              <div class="accordion-content">
+                <a href="#">About Us</a>
+                <a href="#">Press</a>
+                <a href="#">Resources and Policies</a>
+                <a href="#">Careers</a>
+                <a href="#">Trust & Safety</a>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-btn">
+                Explore
+                <span class="down">⌄</span>
+              </button>
+
+              <div class="accordion-content">
+                <a href="#">Write a Review</a>
+                <a href="#">Add a Place</a>
+                <a href="#">Join</a>
+                <a href="#">Travel Stories</a>
+                <a href="#">Help Centre</a>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-btn">
+                Do Business With Us
+                <span class="down">⌄</span>
+              </button>
+
+              <div class="accordion-content">
+                <a href="#">Owners & DMO/CVB</a>
+                <a href="#">Business Advantage</a>
+                <a href="#">Sponsored Placements</a>
+                <a href="#">Advertise with Us</a>
+                <a href="#">Access our Content API</a>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-btn">
+                Get The App
+                <span class="down">⌄</span>
+              </button>
+
+              <div class="accordion-content">
+                <a href="#">iPhone App</a>
+                <a href="#">Android App</a>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-btn">
+                Tripadvisor Sites
+                <span class="down">⌄</span>
+              </button>
+
+              <div class="accordion-content">
+                <a href="#">Book Tours and Attraction Tickets on Viator</a>
+              </div>
+            </div>
+
+          </div>
+        </footer>
+      </div>
+      <!--foot2-->
+      <div class="f2">
+        <div></div>
+      </div>
+    </div>
 
 
 
@@ -553,6 +631,32 @@
 
 
   </div>
+  <script>
+    const accordionBtn = document.querySelectorAll(".accordion-btn");
+
+    accordionBtn.forEach(btn => {
+
+      btn.addEventListener("click", () => {
+
+        const content = btn.nextElementSibling;
+        const arrow = btn.querySelector("span");
+
+        if (content.style.maxHeight) {
+
+          content.style.maxHeight = null;
+          arrow.style.transform = "rotate(0deg)";
+
+        } else {
+
+          content.style.maxHeight = content.scrollHeight + "px";
+          arrow.style.transform = "rotate(180deg)";
+
+        }
+
+      });
+
+    });
+  </script>
 </body>
 
 </html>
